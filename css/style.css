@@ -1,0 +1,393 @@
+body{
+    margin: 0;
+    color:#533738;
+    font-family: 'Montserrat', sans-serif;
+    font-size:18px;
+    background-color: #EFE6E4;
+    line-height:30px;
+    counter-reset: section;
+}
+
+
+._container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+._small-container{
+    width: 1036px;
+    margin: 0 auto;
+}
+
+._grid-box{
+    display:grid;
+    gap: 45px;
+    grid-template-columns: auto 1fr auto;
+}
+
+.page-header{
+    background:url('../img/mainpic.png') no-repeat center top;
+    background-size: cover;
+}
+
+.page-header .menu{
+    display:grid;
+    gap: 38px;
+    grid-template-columns: auto 1fr auto;
+    font-size:16px;
+}
+
+.page-header .block-logo{
+    display: block;
+    position: relative;
+    background: url("../img/logo.png") no-repeat;
+    padding-left: 26px;
+}
+
+
+.page-header a{
+    text-decoration: none;
+    color:#533738;
+}
+
+.page-header .menu{
+    height: 26px;
+    line-height: 26px;
+    padding:36px 0;
+}
+
+.page-header .navigation{
+    justify-self: end;
+}
+
+.page-header .navigation .menu-nav{
+    width:840px;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.intro{
+    display:flex ;
+    flex-direction: column;
+    max-width:500px;
+    margin-top: 55px;
+    padding-bottom: 168px;
+}
+
+.intro-title{
+    margin: 0;
+    font-size:50px;
+    font-weight: 400;
+    Line-height:62px;
+}
+.intro-description{
+    margin: 20px 0 25px 0;
+    max-width: 420px;
+}
+
+
+.site-button{
+    width: 310px;
+    height: 74px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #CC8B86;
+    border:none;
+}
+
+.flex-box{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:21px ;
+
+}
+
+.title-direction{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+    margin: 65px auto 40px auto;
+    text-transform: uppercase;
+
+}
+
+.text-about{
+    margin: 0;
+    max-width: 528px;
+}
+
+.our-achievements{
+    background-color: #8D7370;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 62px;
+
+}
+.list-achievements{
+    text-align: center;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    color: white;
+    padding-left: 0;
+    margin: 0;
+    padding: 85px 0 80px 0;
+}
+
+.item-achievements{
+    display: block;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px;
+    padding-top: 7px;
+}
+
+.our-examples .title-direction{
+    text-align: left;
+}
+
+.work-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item-block{
+   margin-bottom: 20px;
+}
+
+.work-item{
+    position: relative;
+    height: 451px;
+    margin-bottom: 30px;
+}
+
+.item-text{
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    background-color: rgba(100, 72, 69, 0.8);
+    color:#FFFFFF;
+    transition: all,4ms;
+}
+
+.item-text:hover{
+    opacity: 1;}
+
+
+
+.item-text .item-title{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    margin-top:88px;
+    margin-bottom: 0;
+}
+
+.item-text .item-description{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 36px;
+}
+
+.link-else {
+    text-decoration:none;
+    cursor: pointer;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px;
+}
+
+.link-block{
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.our-team{
+    background-color: #E2C4BA;
+}
+
+.our-team .title-direction{
+    padding-top: 50px;
+}
+
+.card-item{
+    width:320px;
+    margin: 0;
+}
+.how-work{
+    background-color: #E2C4BA;
+    padding-bottom: 80px;
+}
+
+.how-work .title-direction{
+    padding-left: 45px;
+    margin-top: 0;
+    padding-top: 15px;
+}
+
+.item-work{
+    position: relative;
+    width:285px;
+    margin-top: 90px;
+    text-align: center;
+}
+
+.flex-content{
+    counter-reset: number-counter;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-work:before{
+    display: inline-block;
+    position: absolute;
+    counter-increment: number-counter;
+    content: counter(number-counter);
+
+    width:70px;
+    height:70px;
+    top: -89px;
+    left: 108px;
+    background-color: #8D7370;
+    border-radius: 50%;
+    color:#FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 70px;
+}
+
+
+.client-review{
+    padding-bottom: 45px;
+}
+
+.client-review .flex-box{
+    position: relative;
+    padding: 0 100px 21px 100px;
+}
+
+.client-review .title-direction{
+    padding-left: 20px;
+}
+
+.client-review .images{
+    display: block;
+}
+
+.client-review .images:first-child{
+    padding-bottom: 24px;
+}
+
+.client-review .review{
+    align-self: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.client-review .author{
+    font-style: normal;
+}
+
+.client-review .slider-button{
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    background-color: #CC8B86;
+    border-radius: 50%;
+    border:none;
+    top: 40%;
+    left: 0;
+}
+
+.client-review .slider-button:last-of-type{
+    left: auto;
+    right: 0;
+}
+
+.client-review .slider-button:focus{
+    outline: none;
+    border: solid 2px #ffffff;
+}
+
+.send-mail{
+    background-color: #8D7370;
+    color: #F6EDE9;
+}
+.send-mail .flex-box{
+    padding-bottom: 0;
+}
+
+.send-mail .title-direction{
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.send-mail .send-form{
+    border:none;
+    border-bottom: 1px solid #FFFFFF;
+    width: 500px;
+    color: #F6EDE9;
+    background-color: transparent;
+    margin-bottom: 30px;
+    padding-bottom: 14px;
+}
+
+.send-mail .send-form:focus{
+    outline: none;
+}
+
+.send-mail .send-form::placeholder{
+    color: #F6EDE9;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+
+}
+
+.main-form{
+    padding-left: 83px;
+    padding-right: 25px;
+    padding-bottom: 190px;
+    flex-basis: 480px;
+
+
+}
+
+.form-text{
+    margin-bottom: 43px;
+}
+
+
+
+.the-end{
+    padding: 30px 0 40px 0;
+}
+
+
+
